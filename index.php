@@ -55,7 +55,7 @@
 			</p>
 
 				<?php
-				  $act = $_GET['act'];
+				  $act = (isset($_GET['act']) ? $_GET['act'] : '');
 				  if($act=='success'){
 				  	echo '<script type="text/javascript">
   					swal("", "บันทึกข้อมูลเรียบร้อยแล้ว", "success");
